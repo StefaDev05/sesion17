@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 16</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="formulario" id="registroForm">
+            <h2> Registro nueva cuenta </h2>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="correo">Correo electrónico: </label>
+            <input type="text" id="correo" name="correo">
+            <label for="contrasenia">Contraseña: </label>
+            <input type="password" id="contrasenia" name="contrasenia">
+            <label for="imagen">Subir imagen para el perfil</label>
+            <input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg" onchange="mostrarImagen(event)">
+            <img id="ver-imagen" alt="Vista previa de la imagen">
+
+            <button type="submit">Regístrate</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
